@@ -15,7 +15,8 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link>
-    <form name="contact" data-netlify="true">
+    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="bot-field" />
       <p>
         <label>Name <input type="text" name="name" /></label>
       </p>
